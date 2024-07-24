@@ -78,11 +78,8 @@ body {
 .reset_btn {
   background: #e6e6e6;
 }
-.alert {
-  color: #fff;
-  padding: 20px;
-  background: #d14539;
-}
+
+
 .header_nav {
   background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
   display: flex;
@@ -108,6 +105,14 @@ body {
   text-decoration: none;
   text-align: center;
 }
+.alert {
+  color: #d14539;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*rgba(230,169,171,.5)*/
+
 .email_error {
   background-color: rgba(230,169,171,.5);
 }

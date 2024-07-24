@@ -6,8 +6,8 @@ function emailValidation() {
     const error = document.getElementById('error-row');
     const Message = document.getElementById('error-message');
 
-    emailIncorrecto.addEventListener('input', () => {
-        if (emailEscrito.value !== emailIncorrecto.value) {
+    emailIncorrecto.addEventListener('input',  () => {
+        if ((emailEscrito.value !== emailIncorrecto.value)) {
           Message.textContent = "El email no coincide";
           error.style.display = 'table-row';
           emailIncorrecto.classList.add('email_error');
@@ -19,7 +19,7 @@ function emailValidation() {
     });
     
       form.addEventListener('submit', e => {
-        if (emailEscrito.value !== emailIncorrecto.value) {
+        if ((emailEscrito.value !== emailIncorrecto.value)) {
           e.preventDefault();
           Message.textContent = "El email no coincide";
           error.style.display = 'table-row';
@@ -31,6 +31,8 @@ function emailValidation() {
           form.submit();
         }
     });
+
+  
 };
     
-    window.onload = emailValidation;  
+  window.onload = emailValidation;  
