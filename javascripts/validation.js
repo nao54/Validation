@@ -8,7 +8,7 @@ function emailValidation() {
 
     emailIncorrecto.addEventListener('input', () => {
         if (emailEscrito.value !== emailIncorrecto.value) {
-          Message.textContent = "Eメールが一致しません";
+          Message.textContent = "El email no coincide";
           error.style.display = 'table-row';
           emailIncorrecto.classList.add('email_error');
         } else {
@@ -21,7 +21,7 @@ function emailValidation() {
       form.addEventListener('submit', e => {
         if (emailEscrito.value !== emailIncorrecto.value) {
           e.preventDefault();
-          Message.textContent = "Eメールが一致しません";
+          Message.textContent = "El email no coincide";
           error.style.display = 'table-row';
           emailIncorrecto.classList.add('email_error');
         } else {
